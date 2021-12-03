@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Responsive-->
+    <link rel="stylesheet" href="responsive.css">
+    <title>Hellraiser Rockeria - Contactos</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="main-header">
+        <!--Navbar-->
+        <div class="styles-menu" id="styles-menu">
+            <nav class="main-menu">
+                <div class="main-logo">
+                    <img src="./img/logoskull.png" alt="Logo Hellraiser" class="main-logo__img">
+                    <p class="main-logo__text">
+                        Hellraiser
+                    </p>
+                </div>
+                <!--Links-->
+                <div class="main-navbar">
+                    <a href="index.html" class="main-navbar__link">Inicio</a>
+                    <a href="tienda.html" class="main-navbar__link">Tienda</a>
+                    <a href="nosotros.html" class="main-navbar__link">Nosotros</a>
+                    <a href="discografias.html" class="main-navbar__link">Discografias</a>
+                </div>
+                <!--Search-->
+                <form action="" class="search-tag">
+                    <input type="text" class="search-tag__input" id="input-search-tag">
+                    <label for="input-search-tag" class="search-tag__label">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </form>
+
+                <!--Links mobil-->
+                <div class="main-navbar-mobil">
+                    <!--BTN-->
+                    <button class="main-navbar-mobil__btn" id="btn-menu-active">
+                        <ion-icon name="filter-outline"></ion-icon>
+                    </button>
+                    <nav class="main-navbar-mobil__links js-main-menu-mobil" id="main-menu-mobil">
+                        <a href="index.html" class="main-navbar-mobil__link">Inicio</a>
+                        <a href="tienda.html" class="main-navbar-mobil__link">Tienda</a>                       
+                        <a href="nosotros.html" class="main-navbar-mobil__link">Nosotros</a>
+                        <a href="discografias.html" class="main-navbar-mobil__link">Discografias</a>
+                    </nav>
+                </div>
+
+
+            </nav>
+        </div>
+        <!--Titulo-->
+        <div class="hero-banner">
+            <h1 class="hero-banner__title">
+                <br>Contactos
+            </h1>
+        </div>
+
+
+
+    </header>
+
+
+    <div>
+        <section class="contactanos">
+            <h2 class="contactanos__title">
+                Escribe tu consulta
+            </h2>
+            <p class="contactanos__description">
+                Mediante este formulario, podras hacernos consultas de todo tipo, nuestra respuesta tardaria
+                aproximadamente 3 dias habiles.
+            </p>
+
+            <form action="#" class="form__lario">
+                <h3 class="contacto__form">Contacto</h3>
+                <input type="text" name="Nombre" placeholder="Nombre" class="form__campos">
+                <input type="text" name="Apellido" placeholder="Apellido" class="form__campos">
+                <input type="text" name="Correo" placeholder="Correo" class="form__campos">
+                <input type="text" name="Telefono" placeholder="Telefono" class="form__campos">
+                <textarea name="mensaje" placeholder="Escriba aqui su mensaje" class="form__campos form__text-area">
+
+                </textarea>
+                <input type="button" value="Enviar" id="btn" class="form__campos">
+                <input type="reset" value="Borrar" id="btn" class="form__campos">
+            </form>
+        </section>
+    </div>
+
+
+    <!--Contacto-->
+
+    <section class="contact">
+
+        <!--Titulo-->
+        <h2 class="contact__tittle">
+            Suscribete Gratis
+        </h2>
+
+        <!--Descripcion-->
+        <p class="contact__description">
+            Suscribete y recibiras: novedades,ofertas,nuevos ingresos y muchas cosas mas.
+        </p>
+        <!--Formulario-->
+
+        <form action="" class="contacto__form">
+            <!--input-->
+            <input type="email" placeholder="" class="contact__input">
+
+            <!--btn-->
+            <input type="submit" value="enviar" class="contact__btn">
+        </form>
+
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+
+        <div class="main-logo">
+            <img src="./img/logoskull.png" alt="Logo Hellraiser" class="main-logo__img">
+            <p class="main-logo__text">
+                Hellraiser
+            </p>
+        </div>
+
+        <!--Copy-->
+        <p class="copyright">
+            Copyright 2021 &#169 | <span class="tex-white">Hellraiser</span> | Todos los derechos reservados.
+        </p>
+
+        <!--Redes Sociales-->
+
+        <div class="social-networks">
+            <a href="#" class="social-networks__link social-networks__link--color">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="social-networks__link social-networks__link--color">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" class="social-networks__link social-networks__link--color">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+
+
+<!--Script-->
+<script src="https://kit.fontawesome.com/cb2fa70757.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<script>
+    const btnOpenMenu = document.getElementById('btn-menu-active')
+    const mainMenuMobil = document.getElementById('main-menu-mobil')
+    let navbarStyle = document.getElementById('styles-menu')
+
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 300) {
+            navbarStyle.classList.add('scrolled')
+        } else {
+            navbarStyle.classList.remove('scrolled')
+        }
+    })
+
+
+    btnOpenMenu.addEventListener('click', () => {
+        mainMenuMobil.classList.toggle('active')
+    })
+
+</script>
+
+</html>
